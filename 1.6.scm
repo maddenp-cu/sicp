@@ -24,5 +24,5 @@
 
 (sqrt 2)
 
-;; Infinite loop because call to new-if must evaluate all three arguments before
-;; passing evaluated values, and the recursive call to sqrt-iter is recursive.
+;;; Infinite loop because call to new-if must evaluate all three arguments before
+;;; passing evaluated values, and the recursive call to sqrt-iter is recursive.
