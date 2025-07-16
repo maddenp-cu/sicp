@@ -1,8 +1,8 @@
-(define (cube x) (* x x x))
-(define (p x)
-  (format #t "p ~g~%" x)
-  (- (* 3 x) (* 4 (cube x))))
 (define (sine angle)
+  (define (p x)
+    (define (cube x) (* x x x))
+    (format #t "p ~g~%" x)
+    (- (* 3 x) (* 4 (cube x))))
   (format #t "sine ~g~%" angle)
   (if (not (> (abs angle) 0.1))
       angle
