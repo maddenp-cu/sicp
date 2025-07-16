@@ -29,4 +29,4 @@
 ;;   log(10) + log(angle) / log(3), and constants disappear, leaving
 ;;   θ(log(angle))
 
-;; Process in linear recursive, so θ(log(angle)) for both time and space.
+;; Process is linear recursive, so θ(log(angle)) for both time and space.
