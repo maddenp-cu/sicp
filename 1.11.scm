@@ -4,6 +4,7 @@
                  (fr (- n 2))
                  (fr (- n 3))))))
 
+"recursive"
 (fr 1)
 (fr 2)
 (fr 3)
@@ -17,6 +18,7 @@
         (fi-iter (+ a b) (+ b c) b (- n 1))))
   (fi-iter 2 1 0 n))
 
+"iterative"
 (fr 1)
 (fr 2)
 (fr 3)

@@ -1,4 +1,3 @@
-;; a = 1, b = 0, p = 0, q = 1
 ;; T1. a <- bq + aq + ap  b <- bp + aq
 ;; T2. a <- (bp + aq)q + (bq + aq + ap)q + (bq + aq + ap)p  b <- (bp + aq)p + (bq + aq + ap)q
 ;;     a <- bpq + aqq + bqq + aqq + apq + bpq + apq + app   b <- bpp + apq + bqq + aqq + apq
@@ -8,7 +7,7 @@
 ;;            \______/      \______/      \_____/          \_____/      \______/
 ;;               q'            q'            p'               p'           q'
 ;;
-;; Expressions stolen from https://sicp.csrg.org/papers/kaldewaij-programming.pdf p91
+;; See also https://sicp.csrg.org/papers/kaldewaij-programming.pdf p91
 
 (define (fib n)
   (define (fib-iter a b p q count)
