@@ -28,4 +28,3 @@
 ;;                                                                < 0.62^n / √5
 ;;         This value is greatest when n=0, or ~1/√5 or ~0.45. For all n>0, the difference is even smaller.
 ;;         That is, the difference between fib(n) and φ^n/√5 is always < 0.45, so no integer is closer. QED.
-
