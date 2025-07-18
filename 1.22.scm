@@ -9,18 +9,19 @@
     (find-divisor n 2))
   (= n (smallest-divisor n)))
 
-
-(define (usec)
-  (let ((t (gettimeofday)))
-    (+ (* 1000000 (car t)) (cdr t))))
+(define (time f)
+  (define (usec)
+    (let ((t (gettimeofday)))
+      (+ (* 1000000 (car t)) (cdr t))))
+  (let ((t0 (usec)))
+    (f)
+    (- (usec) t0)))
 
 (define (find-primes n limit found)
   (if (< found limit)
       (if (prime? n)
           (begin
-            (let ((t0 (usec)))
-              (prime? n)
-              (format #t "~d | ~d µs vs ~g~%" n (- (usec) t0) (/ (sqrt n) 100)))
+            (format #t "~d | ~d µs vs ~g~%" n (time (lambda () (prime? n))) (/ (sqrt n) 100))
             (find-primes (+ n 2) limit (+ found 1)))
           (find-primes (+ n 2) limit found))))
 
