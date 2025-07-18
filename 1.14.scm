@@ -1,3 +1,3 @@
-;; Space: theta(amount + max(kinds-of-coins)) ?
+;; Space: θ(amount + max(kinds-of-coins)) ?
 ;; Time: ???
 
