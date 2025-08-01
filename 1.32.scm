@@ -1,7 +1,7 @@
 (define (identity n) n)
 (define (inc n) (+ n 1))
 
-;; iterative
+;; a. iterative
 
 (define (accumulate-i combiner null-value term a next b)
   (define (iter a result)
@@ -25,7 +25,7 @@
 (factorial-i 5)
 (sum-integers-i 5)
 
-;; recursive
+;; b. recursive
 
 (define (accumulate-r combiner null-value term a next b)
   (define (rec a)
